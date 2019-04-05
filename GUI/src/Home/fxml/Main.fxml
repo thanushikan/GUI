@@ -1,75 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:controller="Home.Controllers.Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Controllers.Main">
    <children>
-      <VBox prefHeight="600.0" prefWidth="187.0" style="-fx-background-color: #808080;">
+      <AnchorPane layoutX="224.0" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #eddb8b;">
          <children>
-            <Label prefHeight="64.0" prefWidth="189.0" text="Welcome : &quot;Username&quot;" />
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Account">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="View Concerts / Festivals">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="120.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Make Booking">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="View Bookings">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="213.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Make Payment">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="260.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Customers Accounts">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="306.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Manage Concerts / Festivals">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="352.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Manage Bookings">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="399.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Monthly Invoices">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="394.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Add Concerts / Festivals">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="434.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Edit /  Cancel CF">
-               <font>
-                  <Font name="System Bold" size="13.0" />
-               </font>
-            </Button>
-            <Label prefHeight="55.0" prefWidth="189.0" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="193.0" text="Log Out" />
+            <Label layoutX="70.0" layoutY="360.0" prefHeight="30.0" prefWidth="93.0" text="Username" />
+            <Label layoutX="442.0" layoutY="324.0" prefHeight="30.0" prefWidth="93.0" text="New Password" />
+            <Label layoutX="405.0" layoutY="55.0" prefHeight="26.0" prefWidth="114.0" text="&quot;Type of Customer&quot;" />
+            <Label layoutX="70.0" layoutY="70.0" prefHeight="30.0" prefWidth="93.0" text="First Name" />
+            <Label layoutX="70.0" layoutY="105.0" prefHeight="30.0" prefWidth="93.0" text="Last Name" />
+            <Label layoutX="79.0" layoutY="135.0" prefHeight="30.0" prefWidth="93.0" text="Address Line 1" />
+            <Label layoutX="79.0" layoutY="162.0" prefHeight="30.0" prefWidth="93.0" text="Address Line 2" />
+            <Label layoutX="87.0" layoutY="191.0" prefHeight="30.0" prefWidth="93.0" text="City" />
+            <Label layoutX="79.0" layoutY="218.0" prefHeight="30.0" prefWidth="93.0" text="Postcode" />
+            <Label layoutX="70.0" layoutY="433.0" prefHeight="30.0" prefWidth="93.0" text="Web Address" />
+            <TextField layoutX="200.0" layoutY="79.0" />
+            <TextField layoutX="200.0" layoutY="108.0" />
+            <TextField layoutX="200.0" layoutY="137.0" />
+            <TextField layoutX="200.0" layoutY="165.0" />
+            <TextField layoutX="200.0" layoutY="193.0" />
+            <TextField layoutX="189.0" layoutY="396.0" />
+            <TextField layoutX="181.0" layoutY="436.0" />
+            <TextField layoutX="200.0" layoutY="221.0" />
+            <PasswordField layoutX="415.0" layoutY="293.0" />
+            <PasswordField layoutX="414.0" layoutY="376.0" />
+            <Button layoutX="429.0" layoutY="528.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Confirm" />
+            <Label layoutX="70.0" layoutY="255.0" prefHeight="30.0" prefWidth="93.0" text="Contact Name" />
+            <TextField editable="false" layoutX="200.0" layoutY="255.0" />
+            <Label layoutX="64.0" layoutY="391.0" prefHeight="30.0" prefWidth="124.0" text="Organisation Name" />
+            <TextField editable="false" layoutX="200.0" layoutY="293.0" />
+            <Label layoutX="69.0" layoutY="291.0" prefHeight="30.0" prefWidth="93.0" text="Contact Number" />
+            <Label layoutX="79.0" layoutY="324.0" prefHeight="30.0" prefWidth="93.0" text="Email" />
+            <TextField editable="false" layoutX="200.0" layoutY="326.0" />
+            <TextField editable="false" layoutX="196.0" layoutY="363.0" />
+            <Label layoutX="87.0" layoutY="36.0" prefHeight="30.0" prefWidth="93.0" text="Title" />
+            <TextField layoutX="181.0" layoutY="477.0" />
+            <Label layoutX="70.0" layoutY="475.0" prefHeight="30.0" prefWidth="93.0" text="Account Number" />
+            <Label layoutX="70.0" layoutY="513.0" prefHeight="30.0" prefWidth="93.0" text="Payment Mothod" />
+            <Label layoutX="442.0" layoutY="240.0" prefHeight="30.0" prefWidth="93.0" text="Old Password" />
+            <PasswordField layoutX="415.0" layoutY="420.0" />
+            <ComboBox editable="true" layoutX="188.0" layoutY="38.0" prefWidth="150.0" />
+            <ComboBox layoutX="188.0" layoutY="515.0" prefWidth="150.0" />
+            <AnchorPane prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #93ed8b;">
+               <children>
+                  <TextField layoutX="130.0" layoutY="42.0" />
+                  <Button layoutX="279.0" layoutY="42.0" mnemonicParsing="false" text="Search" />
+                  <Button layoutX="451.0" layoutY="406.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="58.0" text="Book" />
+                  <Button layoutX="451.0" layoutY="325.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" text="View" />
+                  <TableView layoutX="70.0" layoutY="150.0" prefHeight="376.0" prefWidth="313.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Date" />
+                        <TableColumn prefWidth="75.0" text="Performer" />
+                        <TableColumn prefWidth="75.0" text="Venue" />
+                        <TableColumn prefWidth="84.80001831054688" text="Type of Event" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
          </children>
-      </VBox>
+      </AnchorPane>
+      <AnchorPane layoutX="224.0" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #e09b86;">
+         <children>
+            <VBox layoutX="15.0" layoutY="14.0" prefHeight="64.0" prefWidth="514.0" style="-fx-background-color: #ffc4c4;">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="114.0" snapToPixel="false" text="Label" />
+               </children>
+            </VBox>
+            <Label layoutX="20.0" layoutY="406.0" prefHeight="30.0" prefWidth="93.0" text="Username" />
+            <Label layoutX="355.0" layoutY="101.0" prefHeight="26.0" prefWidth="114.0" text="&quot;Type of Customer&quot;" />
+            <Label layoutX="20.0" layoutY="116.0" prefHeight="30.0" prefWidth="93.0" text="First Name" />
+            <Label layoutX="20.0" layoutY="151.0" prefHeight="30.0" prefWidth="93.0" text="Last Name" />
+            <Label layoutX="29.0" layoutY="181.0" prefHeight="30.0" prefWidth="93.0" text="Address Line 1" />
+            <Label layoutX="29.0" layoutY="208.0" prefHeight="30.0" prefWidth="93.0" text="Address Line 2" />
+            <Label layoutX="37.0" layoutY="237.0" prefHeight="30.0" prefWidth="93.0" text="City" />
+            <Label layoutX="29.0" layoutY="264.0" prefHeight="30.0" prefWidth="93.0" text="Postcode" />
+            <Label layoutX="20.0" layoutY="479.0" prefHeight="30.0" prefWidth="93.0" text="Web Address" />
+            <TextField editable="false" layoutX="150.0" layoutY="125.0" />
+            <TextField editable="false" layoutX="150.0" layoutY="154.0" />
+            <TextField editable="false" layoutX="150.0" layoutY="183.0" />
+            <TextField editable="false" layoutX="150.0" layoutY="211.0" />
+            <TextField editable="false" layoutX="150.0" layoutY="239.0" />
+            <TextField editable="false" layoutX="139.0" layoutY="442.0" />
+            <TextField editable="false" layoutX="131.0" layoutY="482.0" />
+            <TextField editable="false" layoutX="150.0" layoutY="267.0" />
+            <Button layoutX="395.0" layoutY="538.0" mnemonicParsing="false" text="Delect Account " />
+            <Label layoutX="20.0" layoutY="301.0" prefHeight="30.0" prefWidth="93.0" text="Contact Name" />
+            <TextField editable="false" layoutX="150.0" layoutY="301.0" />
+            <Label layoutX="14.0" layoutY="437.0" prefHeight="30.0" prefWidth="124.0" text="Organisation Name" />
+            <TextField editable="false" layoutX="150.0" layoutY="339.0" />
+            <Label layoutX="19.0" layoutY="337.0" prefHeight="30.0" prefWidth="93.0" text="Contact Number" />
+            <Label layoutX="29.0" layoutY="370.0" prefHeight="30.0" prefWidth="93.0" text="Email" />
+            <TextField editable="false" layoutX="150.0" layoutY="372.0" />
+            <TextField editable="false" layoutX="146.0" layoutY="409.0" />
+            <Button layoutX="389.0" layoutY="479.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Edit Details" />
+            <Label layoutX="37.0" layoutY="82.0" prefHeight="30.0" prefWidth="93.0" text="Title" />
+            <TextField editable="false" layoutX="131.0" layoutY="523.0" />
+            <Label layoutX="20.0" layoutY="521.0" prefHeight="30.0" prefWidth="93.0" text="Account Number" />
+            <Label layoutX="20.0" layoutY="559.0" prefHeight="30.0" prefWidth="93.0" text="Payment Mothod" />
+            <Label layoutX="173.0" layoutY="82.0" prefHeight="30.0" prefWidth="93.0" text="Title" />
+            <Label layoutX="146.0" layoutY="559.0" prefHeight="30.0" prefWidth="93.0" text="Payment Mothod" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="214.0" style="-fx-background-color: #8cd3f7;">
+         <children>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="51.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Account">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="171.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="View Concerts / Festivals">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="251.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Make Booking">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="291.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="View Bookings">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="411.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Make Payment">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="38.0" layoutY="91.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Manage Concerts / Festivals">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="211.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Customers Accounts">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Manage Bookings">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="371.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Edit /  Cancel CF">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="331.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Add Concerts / Festivals">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="39.0" layoutY="451.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" text="Monthly Invoices">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="562.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="193.0" text="Log Out" />
+            <Label layoutX="38.0" prefHeight="50.0" prefWidth="185.0" style="-fx-background-color: #8688e0;" text="Welcome : &quot;Username&quot;" />
+            <AnchorPane layoutX="1.0" prefHeight="600.0" prefWidth="37.0" style="-fx-background-color: #62e585;" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
